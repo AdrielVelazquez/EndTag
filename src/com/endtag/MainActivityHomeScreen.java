@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -29,6 +30,8 @@ public class MainActivityHomeScreen extends Activity implements OnClickListener 
 	    link.setText(Html.fromHtml(linkText));
 	    link.setMovementMethod(LinkMovementMethod.getInstance());
 
+	      Button mBtn1 = (Button) findViewById(R.id.button1);
+	        mBtn1.setOnClickListener(this);
 
     }
 
@@ -47,17 +50,12 @@ public class MainActivityHomeScreen extends Activity implements OnClickListener 
         // TODO Auto-generated method stub
     	
 
-    	EditText name = (EditText)findViewById(R.id.Username);
-	    String strname = name.getText().toString();
-	    
-
 
           Log.i("clicks","You Clicked Login");
           	Intent i=new Intent(
              MainActivityHomeScreen.this,
              MainActivityLessonsList.class);
-          	 i.putExtra("Username", strname);
-      startActivity(i);
+          	startActivity(i);
 
 
     }
