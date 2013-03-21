@@ -1,5 +1,4 @@
-package com.endtag;
-
+package com.example.endtag;
 
 import android.os.Bundle;
 import android.app.Activity;

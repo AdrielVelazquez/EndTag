@@ -1,5 +1,5 @@
 /** Automatically generated file. DO NOT MODIFY */
-package com.endtag;
+package com.example.endtag;
 
 public final class BuildConfig {
     public final static boolean DEBUG = true;
